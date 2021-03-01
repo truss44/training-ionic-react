@@ -103,7 +103,7 @@ const App: React.FC = () => {
             <IonRow>
               <IonCol>
                 <IonItem>
-                  <IonLabel position="floating">Your Height ({calcUnits == 'mkg' ? 'm' : 'ft'})</IonLabel>
+                  <IonLabel position="floating">Your Height ({calcUnits === 'mkg' ? 'm' : 'ft'})</IonLabel>
                   <IonInput type="number" ref={heightInputRef}></IonInput>
                 </IonItem>
               </IonCol>
@@ -111,7 +111,7 @@ const App: React.FC = () => {
             <IonRow>
               <IonCol>
                 <IonItem>
-                  <IonLabel position="floating">Your Weight ({calcUnits == 'mkg' ? 'kg' : 'lbs'})</IonLabel>
+                  <IonLabel position="floating">Your Weight ({calcUnits === 'mkg' ? 'kg' : 'lbs'})</IonLabel>
                   <IonInput type="number" ref={weightInputRef}></IonInput>
                 </IonItem>
               </IonCol>
